@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>RepData Gym</title>
+<meta name="description" content="Database gerakan gym per alat: variasi, otot yang bekerja, tempo, dan catatan dari anggota.">
+<meta name="theme-color" content="#16191e">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#beranda" aria-label="RepData beranda">
+      <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><circle cx="16" cy="16" r="13"/><circle cx="16" cy="16" r="7.5" stroke-width="1.6"/><circle cx="16" cy="16" r="2.6" fill="currentColor" stroke="none"/></svg>
+      <span><b>REPDATA</b><small>Kuasai setiap alat</small></span>
+    </a>
+    <nav class="nav" aria-label="Utama">
+      <a href="#beranda" data-nav="beranda">Beranda</a>
+      <a href="#database" data-nav="database">Database</a>
+      <a href="#saran" data-nav="saran">Saran</a>
+    </nav>
+    <a class="acct out" id="acct-link" href="#akun" data-nav="akun" aria-label="Masuk atau daftar"><span>Masuk</span></a>
+  </div>
+</header>
+
+<main class="wrap" id="app"></main>
+
+<footer>
+  <div class="wrap">
+    <span>RepData: kamus gerakan per alat gym. Konsultasikan dengan pelatih bila punya cedera.</span>
+    <span>Data otot: 3 = utama · 2 = pendukung · 1 = stabilisator</span>
+  </div>
+</footer>
+<div class="toast" id="toast" hidden></div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
+<script src="config.js"></script>
+<script src="dataset.js"></script>
+<script src="data.js"></script>
+<script src="photos.js"></script>
+<script src="anim.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
